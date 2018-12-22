@@ -2,7 +2,7 @@
 December 14 2018 is when this project and README file was created.
 
 ### Project Title
-Replace the Project Title
+City comparison data on bike rentals
 
 ### Description
 Describe what your project is about and what it does
