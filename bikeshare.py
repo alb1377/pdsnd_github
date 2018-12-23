@@ -98,18 +98,18 @@ def time_stats(df):
     print('-'*40)
 
 def station_stats(df):
-    """Displays statistics on the most popular stations and trip."""
+    """Displays statistics on the most popular stations and trips from start to finish."""
 
     print('\nCalculating The Most Popular Stations and Trip...\n')
     start_time = time.time()
 
     # TO DO: display most commonly used start station
     common_start_station = df['Start Station'].value_counts().idxmax()
-    print('The most common start station:', common_start_station)
+    print('The most used start station:', common_start_station)
 
     # TO DO: display most commonly used end station
     common_end_station = df['End Station'].value_counts().idxmax()
-    print('\nThe most common end station:', common_end_station)
+    print('\nThe most used end station:', common_end_station)
 
     # TO DO: display most frequent combination of start station and end station trip
     frequent_start_end_trip = df[['Start Station', 'End Station']].mode().loc[0]
