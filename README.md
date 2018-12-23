@@ -5,7 +5,7 @@ December 14 2018 is when this project and README file was created.
 City comparison data on bike rentals
 
 ### Description
-Describe what your project is about and what it does
+This project compares data on bicycle-sharing systems from three cities: Chicago, Washington, and New York City. This system allows people to rent a bicycle for a short duration for a price. With this project you can view data on popular travel times, trip duration, and popular stations.
 
 ### Files used
 washington.cvs
