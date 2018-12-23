@@ -55,7 +55,7 @@ def load_data(city, month, day):
     df['day'] = df['Start Time'].dt.day
     df['hour'] = df['Start Time'].dt.hour
     """
-    Loads data for the specified city and filters by month and day if applicable.
+    Loads data for the specified city (Washington, Chicago, or New York City) and filters by month (January - June) and day (Sunday - Saturday) if applicable.
 
     Args:
         (str) city - name of the city to analyze
