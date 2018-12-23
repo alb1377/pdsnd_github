@@ -15,4 +15,7 @@ bikeshare.py
 README.md
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+https://udacity.github.io/git-styleguide/
+https://hackernoon.com/what-makes-a-good-commit-message-995d23687ad
+https://rubygarage.org/blog/most-basic-git-commands-with-examples
+https://help.github.com/articles/pushing-to-a-remote/
