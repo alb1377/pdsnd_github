@@ -55,7 +55,7 @@ def load_data(city, month, day):
     df['day'] = df['Start Time'].dt.day
     df['hour'] = df['Start Time'].dt.hour
     """
-    Loads data for the specified city and filters by month and day if applicable.
+    Loads data for the specified city (Washington, Chicago, or New York City) and filters by month (January - June) and day (Sunday - Saturday) if applicable.
 
     Args:
         (str) city - name of the city to analyze
@@ -73,7 +73,7 @@ def load_data(city, month, day):
     return df
 
 def time_stats(df):
-    """Displays statistics on the most frequent times of travel."""
+    """Displays statistics on the most frequent times of travel in a specified month or day."""
 
     print('\nCalculating The Most Frequent Times of Travel...\n')
     start_time = time.time()
@@ -98,18 +98,18 @@ def time_stats(df):
     print('-'*40)
 
 def station_stats(df):
-    """Displays statistics on the most popular stations and trip."""
+    """Displays statistics on the most popular stations and trips from start to finish."""
 
     print('\nCalculating The Most Popular Stations and Trip...\n')
     start_time = time.time()
 
     # TO DO: display most commonly used start station
     common_start_station = df['Start Station'].value_counts().idxmax()
-    print('The most common start station:', common_start_station)
+    print('The most used start station:', common_start_station)
 
     # TO DO: display most commonly used end station
     common_end_station = df['End Station'].value_counts().idxmax()
-    print('\nThe most common end station:', common_end_station)
+    print('\nThe most used end station:', common_end_station)
 
     # TO DO: display most frequent combination of start station and end station trip
     frequent_start_end_trip = df[['Start Station', 'End Station']].mode().loc[0]
